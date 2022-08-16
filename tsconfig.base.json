@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "jsx": "react-jsx",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -14,7 +15,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo/api/util-interfaces": [
+        "libs/api/util-interfaces/src/index.ts"
+      ],
+      "@monorepo/store/feature-game-detail": [
+        "libs/store/feature-game-detail/src/index.ts"
+      ],
+      "@monorepo/store/ui-shared": ["libs/store/ui-shared/src/index.ts"],
+      "@monorepo/store/util-formatters": [
+        "libs/store/util-formatters/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
